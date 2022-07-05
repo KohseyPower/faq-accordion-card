@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 *  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 body {
     display:flex;
@@ -10,11 +13,23 @@ body {
     height: 100vh;
 }
 
+#box-illustration {
+    position:sticky;
+    left: 12%;
+    top: 50%;
+}
+
 main {
     display: flex;
+    background : no-repeat url("images/bg-pattern-desktop.svg");
 }
 
 /* CLASS BROUILLON */
 .brouillon {
     border: solid black 1px;
+}
+
+.faq {
+    width: 40rem;
+    padding: 6rem 4rem 4rem 6rem;
 }
