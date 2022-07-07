@@ -18,7 +18,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
-    font-size:
 }
 
 body {
@@ -26,25 +25,36 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(var(--Soft-violet) 0%, var(--Soft-blue) 100%);
 }
 
 .images {
     display: flex;
     background: no-repeat url("images/bg-pattern-desktop.svg");
     background-size: 185%;
-    background-position-x: -26.9rem;
-    background-position-y: -8rem;
+    background-position-x: -27rem;
+    background-position-y: -15.3rem;
+    overflow: hidden;
+    border-radius: 30px 0 0 30px;
+    background-color: white;
+}
+
+.images div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .images #woman {
-    align-self: center;
     justify-content: center;
+    align-items: center;
+    transform: translate(-3rem, -3rem);
 }
 
 .images #box-illustration {
     position: absolute;
-    left: 5%;
-    top: 42%;
+    left: 3%;
+    top: 38%;
 }
 
 main {
@@ -52,31 +62,45 @@ main {
     height: 572px;
 }
 
-
-/* CLASS BROUILLON */
-
-.brouillon {
-    border: solid black 1px;
-}
-
 .faq {
     width: 40rem;
-    padding: 6rem 4rem 4rem 6rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 30px 30px 0;
+    background: white;
+}
+
+.faq h1 {
+    padding-bottom: 1rem;
+    color: var(--Very-dark-desaturated-blue);
 }
 
 .faq section div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid var(--Light-grayish-blue);
 }
 
-.faq section div h2 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.faq section div a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--Very-dark-grayish-blue);
+}
+
+.faq section div a:hover {
+    color: var(--Soft-red);
 }
 
 .faq section p {
     display: none;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--Light-grayish-blue);
+    font-size: 12px;
+    color: var(--Dark-grayish-blue);
 }
