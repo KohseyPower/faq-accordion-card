@@ -1,30 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    /* Text color */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+    /* Background color */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+    /* Text color bis */
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+    /* Dividers color */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+}
 
-*  {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
+    font-size:
 }
+
 body {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-#box-illustration {
-    position:sticky;
-    left: 12%;
-    top: 50%;
+.images {
+    display: flex;
+    background: no-repeat url("images/bg-pattern-desktop.svg");
+    background-size: 185%;
+    background-position-x: -26.9rem;
+    background-position-y: -8rem;
+}
+
+.images #woman {
+    align-self: center;
+    justify-content: center;
+}
+
+.images #box-illustration {
+    position: absolute;
+    left: 5%;
+    top: 42%;
 }
 
 main {
     display: flex;
-    background : no-repeat url("images/bg-pattern-desktop.svg");
+    height: 572px;
 }
 
+
 /* CLASS BROUILLON */
+
 .brouillon {
     border: solid black 1px;
 }
@@ -32,4 +62,21 @@ main {
 .faq {
     width: 40rem;
     padding: 6rem 4rem 4rem 6rem;
+}
+
+.faq section div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq section div h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.faq section p {
+    display: none;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Light-grayish-blue);
 }
