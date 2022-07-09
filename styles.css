@@ -98,7 +98,6 @@ main {
 }
 
 .faq section p {
-    display: none;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--Light-grayish-blue);
     font-size: 12px;
