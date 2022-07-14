@@ -34,27 +34,31 @@ body {
     background-size: 185%;
     background-position-x: -27rem;
     background-position-y: -15.3rem;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 30px 0 0 30px;
     background-color: white;
 }
 
-.images div {
-    display: flex;
+.images #grid {
+    display: grid;
+    grid-template-columns: 1fr 0px;
     justify-content: center;
+    align-items: center;
+}
+
+.images #hidden {
+    overflow: hidden;
+    height: 100%;
+    display: flex;
     align-items: center;
 }
 
 .images #woman {
-    justify-content: center;
-    align-items: center;
     transform: translate(-3rem, -3rem);
 }
 
 .images #box-illustration {
-    position: absolute;
-    left: 3%;
-    top: 38%;
+    transform: translate(-35.3rem);
 }
 
 main {
@@ -91,6 +95,7 @@ main {
     font-weight: 400;
     text-decoration: none;
     color: var(--Very-dark-grayish-blue);
+    cursor: pointer;
 }
 
 .faq section div a:hover {
@@ -100,6 +105,8 @@ main {
 .faq section p {
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--Light-grayish-blue);
-    font-size: 12px;
+    font-size: 15px;
     color: var(--Dark-grayish-blue);
 }
+
+;
