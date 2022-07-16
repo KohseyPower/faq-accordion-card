@@ -1,20 +1,21 @@
 function showUp(event) {
     /* Initialization*/
-    /* enable hidden to every paragraph */
     let parent = document.querySelector('main .faq');
-    let slctAll = parent.querySelectorAll('p');
+    let slctAllPara = parent.querySelectorAll('p');
 
     let slctAllArrows = parent.querySelectorAll('img');
 
     let slctAllBorder = parent.querySelectorAll('section div');
 
-    for (let i = 0; i < slctAll.length; i++) {
-        slctAll[i].hidden = true;
+    let slctAllLink = parent.querySelectorAll('a');
+    for (let i = 0; i < slctAllPara.length; i++) {
+        slctAllPara[i].hidden = true;
         slctAllArrows[i].style.transform = "rotate(0)";
         slctAllBorder[i].style.borderBottom = "1px solid var(--Light-grayish-blue)";
+        slctAllLink[i].style.fontWeight = "normal";
     };
 
-    /* selected para can be hiden or "unhidden" */
+    /* Specification on the element selected */
     let div = event.target.parentNode;
     let para = next(div);
     let arrow = next(event.target);
@@ -24,6 +25,7 @@ function showUp(event) {
         para.hidden = false;
         arrow.style.transform = "rotate(180deg)";
         border.style.borderBottom = "none";
+        event.target.style.fontWeight = "bold";
     };
 
 };

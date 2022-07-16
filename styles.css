@@ -28,6 +28,11 @@ body {
     background: linear-gradient(var(--Soft-violet) 0%, var(--Soft-blue) 100%);
 }
 
+main {
+    display: flex;
+    height: 572px;
+}
+
 .images {
     display: flex;
     background: no-repeat url("images/bg-pattern-desktop.svg");
@@ -59,11 +64,6 @@ body {
 
 .images #box-illustration {
     transform: translate(-35.3rem);
-}
-
-main {
-    display: flex;
-    height: 572px;
 }
 
 .faq {
@@ -109,4 +109,30 @@ main {
     color: var(--Dark-grayish-blue);
 }
 
-;
+
+/* faie mobile */
+
+@media screen and (max-width: 1100px) {
+    main {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 20 1 auto;
+        font-size: 12px;
+        height: 100%;
+    }
+    main .images {
+        transform: translateY(5rem);
+        height: 30%;
+        width: 30%;
+    }
+    main .images #box-illustration {
+        transform: translate(-25rem);
+    }
+    main .faq {
+        width: 360px;
+        height: 440px;
+        padding: 0.7rem;
+        border-radius: 25px;
+    }
+}
